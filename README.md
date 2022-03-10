@@ -1,1 +1,1 @@
-# Simple-Chat-App
+# chotu-chat-room

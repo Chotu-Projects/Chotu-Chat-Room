@@ -1,5 +1,5 @@
 {
-  "name": "simple-chat-app",
+  "name": "chotu-chat-room",
   "version": "1.0.0",
   "description": "",
   "main": "server.js",
@@ -9,14 +9,14 @@
   },
   "repository": {
     "type": "git",
-    "url": "git+https://github.com/Chotu-Projects/Simple-Chat-App.git"
+    "url": "git+https://github.com/Chotu-Projects/chotu-chat-room.git"
   },
   "author": "Punit-Choudhary",
   "license": "ISC",
   "bugs": {
-    "url": "https://github.com/Chotu-Projects/Simple-Chat-App/issues"
+    "url": "https://github.com/Chotu-Projects/chotu-chat-room/issues"
   },
-  "homepage": "https://github.com/Chotu-Projects/Simple-Chat-App#readme",
+  "homepage": "https://github.com/Chotu-Projects/chotu-chat-room#readme",
   "dependencies": {
     "express": "^4.17.3",
     "moment": "^2.29.1",
