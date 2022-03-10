@@ -11,7 +11,7 @@
 # Chotu Chat Room
 <p align="left">
     <a href="https://github.com/Chotu-Projects/Chotu-Chat-Room/releases/" alt="Releases">
-        <img src="https://img.shields.io/github/v/release/Chotu-Projects/Chotu-Chat-Room" />
+        <img src="https://img.shields.io/github/v/release/chotu-projects/chotu-chat-room" />
     </a>
     <a href="https://img.shields.io/github/languages/top/Chotu-Projects/Chotu-Chat-Room">
         <img src="https://img.shields.io/github/languages/top/Chotu-Projects/Chotu-Chat-Room" />
