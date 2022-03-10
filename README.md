@@ -28,7 +28,7 @@ No registration/login required.
 ### Features
 - No Login/Registration Required
 - Private (1-1) && Group Chat
-- No chat history / anonmyous chat
+- No chat history / anonymous chat
 
 ### Developer To-Do list:
 - Themes
