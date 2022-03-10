@@ -1,0 +1,28 @@
+{
+  "name": "simple-chat-app",
+  "version": "1.0.0",
+  "description": "",
+  "main": "server.js",
+  "scripts": {
+    "start": "node server",
+    "dev": "nodemon server"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/Chotu-Projects/Simple-Chat-App.git"
+  },
+  "author": "Punit-Choudhary",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/Chotu-Projects/Simple-Chat-App/issues"
+  },
+  "homepage": "https://github.com/Chotu-Projects/Simple-Chat-App#readme",
+  "dependencies": {
+    "express": "^4.17.3",
+    "moment": "^2.29.1",
+    "socket.io": "^4.4.1"
+  },
+  "devDependencies": {
+    "nodemon": "^2.0.15"
+  }
+}
