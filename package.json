@@ -18,8 +18,10 @@
   },
   "homepage": "https://github.com/Chotu-Projects/chotu-chat-room#readme",
   "dependencies": {
+    "dotenv": "^16.0.0",
     "express": "^4.17.3",
     "moment": "^2.29.1",
+    "request": "^2.88.2",
     "socket.io": "^4.4.1"
   },
   "devDependencies": {
