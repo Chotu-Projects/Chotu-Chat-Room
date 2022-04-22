@@ -1,3 +1,4 @@
+const dotenv = require('dotenv');
 const path = require('path');
 const http = require('http');
 const express = require('express');
@@ -13,6 +14,10 @@ const {
 const app = express();
 const server = http.createServer(app);
 const io = socketio(server);
+
+dotenv.config({
+  path: 'config.env'
+})
 
 // Set static folder
 app.use(express.static(path.join(__dirname, 'public')));
@@ -48,7 +53,30 @@ io.on('connection', socket => {
   socket.on('chatMessage', msg => {
     const user = getCurrentUser(socket.id);
 
-    io.to(user.room).emit('message', formatMessage(user.username, msg));
+    var request = require('request');
+    var options = {
+      'method': 'POST',
+      'url': 'https://api.tisane.ai/parse',
+      'headers': {
+        'Content-Type': 'application/json',
+        'Ocp-Apim-Subscription-Key': process.env.API_KEY
+      },
+      body: JSON.stringify({
+        "language": "en",
+        "content": msg,
+        "settings": {
+            "snippets": true
+        }
+      })
+
+    };
+    request(options, function (error, response) {
+      if (error) throw new Error(error);
+      if (!(JSON.parse(response.body).abuse)) {
+        io.to(user.room).emit('message', formatMessage(user.username, msg));
+      }
+    });
+
   });
 
   // Runs when client disconnects
